@@ -22,6 +22,9 @@ class LongButton extends StatelessWidget{
           height: 42.0,
           child: Text(
             buttonName,
+            style: const TextStyle(
+              color: Colors.white
+            ),
           ),
         ),
       ),
