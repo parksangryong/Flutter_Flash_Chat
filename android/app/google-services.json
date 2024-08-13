@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "603373187873",
+    "project_id": "flash-chat-f850d",
+    "storage_bucket": "flash-chat-f850d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:603373187873:android:5f521ccc93f287ca274460",
+        "android_client_info": {
+          "package_name": "com.sangryong.flash_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBTQFO5LPC6w4KkQBCM_ZrOPiWgGA4zjM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
