@@ -27,9 +27,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children:[
-                  SizedBox(
-                    height: 60.0,
-                    child: Image.asset('images/logo.png'),
+                  Hero(
+                    tag: 'logo',
+                    child: SizedBox(
+                      height: 60.0,
+                      child: Image.asset('images/logo.png'),
+                    ),
                   ),
                   const Text(
                     'Flash Chat',
@@ -45,7 +48,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               height: 48.0,
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
                 elevation: 5.0,
                 color: Colors.lightBlueAccent,
@@ -63,7 +66,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.symmetric(vertical: 16.0),
+              padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
                 color: Colors.blueAccent,
                 borderRadius: BorderRadius.circular(30.0),
