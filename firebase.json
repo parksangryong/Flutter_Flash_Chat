@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "flash-chat-f850d",
+          "appId": "1:603373187873:android:5f521ccc93f287ca274460",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "flash-chat-f850d",
+          "appId": "1:603373187873:ios:30aa2a974869ade9274460",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "flash-chat-f850d",
+          "appId": "1:603373187873:ios:c9ccb8dba46ec21f274460",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "flash-chat-f850d",
+          "configurations": {
+            "android": "1:603373187873:android:5f521ccc93f287ca274460",
+            "ios": "1:603373187873:ios:30aa2a974869ade9274460",
+            "macos": "1:603373187873:ios:c9ccb8dba46ec21f274460",
+            "web": "1:603373187873:web:b52f498cb5fa7aa6274460",
+            "windows": "1:603373187873:web:6f00f5b5d838a65b274460"
+          }
+        }
+      }
+    }
+  }
+}

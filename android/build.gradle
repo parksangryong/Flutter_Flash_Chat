@@ -1,5 +1,12 @@
-plugins {
-    id("com.google.gms.google-services") version "4.4.1" apply false
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.2'  // 최신 버전으로 업데이트하세요.
+        classpath 'com.google.gms:google-services:4.4.1' // Firebase 플러그인 버전
+    }
 }
 
 allprojects {
