@@ -57,11 +57,13 @@ class _WelcomeScreenState extends State<WelcomeScreen>
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Hero(
-                    tag: 'logo',
-                    child: SizedBox(
-                      height: 60,
-                      child: Image.asset('images/logo.png'),
+                  Flexible(
+                    child: Hero(
+                      tag: 'logo',
+                      child: SizedBox(
+                        height: 60,
+                        child: Image.asset('images/logo.png'),
+                      ),
                     ),
                   ),
                   SizedBox(
