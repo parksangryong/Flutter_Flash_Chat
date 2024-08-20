@@ -22,6 +22,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   late String messageText;
   late User loggedInUser;
+  late int num;
 
   @override
   void initState() {
@@ -65,7 +66,7 @@ class _ChatScreenState extends State<ChatScreen> {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             StreamBuilder(
-                stream: _firestore.collection("messages").snapshots(),
+                stream: _firestore.collection("messages").orderBy('num').snapshots(),
                 builder: (context, snapshot) {
                   if (snapshot.hasError) {
                     return const Text(
@@ -100,8 +101,13 @@ class _ChatScreenState extends State<ChatScreen> {
                       final messageWidget = MessageBubble(
                           text: messageText, sender: messageSender, isMe: currentUser == messageSender,);
 
+
+
                       messageWidgets.add(messageWidget);
                     }
+                      num = messages.length;
+
+
 
                     return Expanded(
                       child: ListView(
@@ -139,7 +145,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     onPressed: () async {
                       messageTextController.clear();
                       await _firestore.collection("messages").add(
-                          {'text': messageText, 'sender': loggedInUser.email});
+                          {'text': messageText, 'sender': loggedInUser.email, 'num' :num});
                     },
                     child: const Text(
                       'Send',
